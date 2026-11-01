@@ -8,3 +8,46 @@
 @media(max-width:950px){.menu-toggle{display:block}.nav-links{display:none;position:absolute;top:78px;left:0;right:0;background:var(--surface);padding:25px 5%;flex-direction:column;align-items:stretch;border-bottom:1px solid var(--border)}.nav-links.open{display:flex}.hero-bottom{align-items:start;flex-direction:column}.about-grid{gap:35px}}
 @media(max-width:700px){.section{padding:75px 0}.hero{padding-top:65px}.hero h1{margin:45px 0}.hero-top{align-items:start;flex-direction:column;gap:15px}.about-grid,.credential-grid,.leadership-grid{grid-template-columns:1fr}.section-heading{flex-direction:column;align-items:start}.timeline-item{grid-template-columns:1fr;gap:10px}.logo{font-size:.73rem}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important}}
+
+
+/* CTF Certificate */
+
+.ctf-certificate {
+  max-width: 950px;
+  margin: 40px auto 0;
+  padding: 12px;
+  background: #211a29;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.ctf-certificate object {
+  display: block;
+  width: 100%;
+  height: 600px;
+  border: none;
+  border-radius: 6px;
+}
+
+.ctf-pdf-link {
+  display: inline-block;
+  margin-top: 18px;
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.ctf-pdf-link:hover {
+  color: var(--accent-light);
+}
+
+@media (max-width: 700px) {
+  .ctf-certificate {
+    padding: 6px;
+  }
+
+  .ctf-certificate object {
+    height: 350px;
+  }
+}
+
